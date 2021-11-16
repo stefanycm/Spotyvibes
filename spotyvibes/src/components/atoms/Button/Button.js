@@ -1,22 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './button.scss';
 
-const Button = ({
-  myStyle = 'primary',
-  action = undefined,
-  type = 'button',
-  text = '',
-}) => {
+const Button = ({ myStyle, action, type, text }) => {
   return (
     <button
-      className={`button button--${myStyle}`}
-      onClick={action}
-      type={type}
+      className={`button button--${ myStyle }`}
+      onClick={ action }
+      type={ type }
     >
-      {text}
+      { text }
     </button>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default Button;

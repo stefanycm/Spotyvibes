@@ -10,26 +10,28 @@
   transition: transform 250ms;
 
   &--primary {
-    background: $primaryColor;
-    color: $secondaryText;
+    background: $primary-color;
+    box-shadow: 0px 10px 20px 0px $boxshadow-color;
+    color: $secondary-text;
   }
 
   &--secondary {
-    background: $lightPrimaryColor;
-    color: $otherText;
+    background: $light-primary-color;
+    box-shadow: 0px 10px 20px 0px $boxshadow-color;
+    color: $other-text;
   }
 
   &--underline {
     background: none;
-    color: $secondaryText;
+    color: $secondary-text;
 
     &:after {
+      background-color: $primary-color;
+      border-radius: 50px;
       content: "";
+      display: block;
       height: 2px;
       width: 100%;
-      background-color: $primaryColor;
-      display: block;
-      border-radius: 50px;
     }
   }
 

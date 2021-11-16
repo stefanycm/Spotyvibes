@@ -1,0 +1,22 @@
+@import "../../../styles/variables.scss";
+
+.input {
+  border: none;
+  border-radius: $border-radius;
+  font-size: 1em;
+  padding: 1em 3em;
+
+    &:focus {
+      outline: none;
+
+      &::placeholder {
+          color: $placeholder-focus;
+      }
+  }
+
+  &::placeholder {
+    color: $placeholder;
+    transition: color 300ms ease-in-out;
+}
+
+}

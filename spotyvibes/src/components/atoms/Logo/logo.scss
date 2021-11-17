@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo__img {
+  width: 4%;
+  height: 4%;
+}
+
+.logo__text {
+  font-family: $secondary-font;
+  font-size: 2vw;
+  color: $secondary-text;
+  margin-left: 1%;
+}
